@@ -6,20 +6,12 @@
 		<div class="col-xs-12 col-sm-8 col-sm-offset-1 pull-left">
 			<div class="page-header">
 				<h1><?php the_title(); ?></h1>
-			</div>
-			<div class="compartilhe">
-			<?php 
+				<?php 
 				$share = '[ssba url='. get_permalink() . ' title="Share"]';
-				echo do_shortcode($share);
-			?>
+					echo do_shortcode($share);
+				?>
 			</div>
 			<?php the_content(); ?>
-			<div class="compartilhe">
-			<?php 
-				$share = '[ssba url='. get_permalink() . ' title="Share"]';
-				echo do_shortcode($share);
-			?>
-			</div>
 			<a class="btn btn-custom6" href="<?php echo bloginfo() ?>">Voltar ao blog</a>
 			<div class="row form-single no-gutter">
 			<strong class="news-letter-single">Assine nossa newsletter</strong>
@@ -45,7 +37,6 @@
 		      <div class="clear"></div>
 		      </div>
           	</form>
-          	<?php comments_template('', true); ?>
 		</div>
 	<?php endwhile; ?>
 	<?php endif; ?>

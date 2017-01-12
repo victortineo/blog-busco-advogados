@@ -1,20 +1,4 @@
 <?php get_header(); ?>
-<!-- HERO -->
-<!-- FUNDO + LOGO  + test-->
-<div class="container-fluid hero text-center">
-	<!-- LOGO -->
-	<img src="<?php echo get_template_directory_uri() ?>/dist/assets/img/hero-logo.png" alt="Instrust WEB">
-</div>
-<!-- HERO CONTENT -->
-<div class="container-fluid hero-content">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 text-center">
-				<h2><p>Conteúdos que abordam experiência na prática e tendências do mercado de advocacia.</p></h2>
-			</div>
-		</div>
-	</div>
-</div>
 <section id="blog" class="container blog">
 	<div class="row">
 		<div class="col-xs-12 col-sm-9">

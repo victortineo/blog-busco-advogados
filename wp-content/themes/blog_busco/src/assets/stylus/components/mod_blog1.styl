@@ -7,13 +7,17 @@
 	background-position center center
 	background-size cover
 	background-repeat no-repeat
-	padding 150px 0 150px 0
+	min-height 450px
 /*HERO-CONTENT*/
 .hero-content 
 	background-color #545050
 	color #fff
 	margin-bottom 13px
 	padding 15px 0
+	p
+		font-size 19px
+		margin 0
+		padding 0
 .hero-content h2
 	margin 0
 .hero-content h2 > strong 
@@ -28,8 +32,6 @@
 	.page-header 
 		padding 0 0 25px 0
 		text-align left
-		@media mqmobile-md
-			text-align center
 		h1 
 			font-size 32px
 			font-weight bold
@@ -68,28 +70,24 @@
 			transition(.2s all ease-in-out)
 		.post-content
 			padding 15px
-			background-color $customblack2
 			h1
 				padding 0
 				margin 0
 				font-size 18px
 				font-weight 700
-				color $customwhite1
 			a
-				color $customwhite1
+				color $customblack1
 				text-decoration none
 				transition(.2s all ease-in)
 			.title
 				&:hover
-					display inline-block
-					padding 5px 0
 					color $customgray3
 			p 
 				padding 15px 0
 				margin 0
 				font-size 15px
 				font-weight 400
-				color white
+				color $customblack1
 			@media screen and (max-width 768px)
 				text-align center
 	.post-excerpt
@@ -194,9 +192,7 @@
 			&:hover
 				font-weight 600
 .single
-	padding 50px 15px 0px 15px
-	.page-header h1
-		padding-bottom 25px
+	padding 50px 15px
 	
 .faq
 	padding-bottom 50px
@@ -249,9 +245,8 @@
 		padding 0 15px 6px 15px
 		display inline-block
 	.news-letter-single
-		background-color $customred2
-		color $customwhite1
-		padding 10px 15px 6px 15px
+		color $customblack1
+		padding 5px 0
 .comment-respond
 	clear both
 	padding 25px 0
@@ -345,19 +340,30 @@
 	header
 		background-color $customblack3
 
+.ssba
+	&-img
+		max-width 26px !important
+		margin 0 5px 0 0
 
-.ssba .ssba-img
-	min-width 5%
-	max-width 15%
-	margin-top 10px
-	margin-bottom 10px
+.wp-pagenavi
+	padding-bottom 25px
 
-.compartilhe
-	.ssba .ssba-img
-		width 5%
-		
-		@media mqmobile-md
-			width 10%
-				
-		@media mqmobile
-			width 20%
+.wp-pagenavi a, .wp-pagenavi span
+	padding 5px 
+	margin-right 10px
+	font-size 15px 
+	color $customgreen2 
+	text-decoration none
+	border 1px solid #ccc 
+	border-radius 5px
+	
+.wp-pagenavi a:hover, 
+.wp-pagenavi span.current
+	background $customgreen2
+	color #fff
+	
+.wp-pagenavi a:hover
+	border 1px solid #AFAFAF
+	
+.wp-pagenavi span.current 
+	font-weight bold

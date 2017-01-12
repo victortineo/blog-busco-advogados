@@ -22,4 +22,10 @@
       </div>
     </div>
   </div>
-</footer> 
+</footer>
+
+<script src="<?=get_template_directory_uri()?>/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?=get_template_directory_uri()?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?=get_template_directory_uri()?>/dist/assets/js/main.jquery.js"></script>
+</body>
+</html>
