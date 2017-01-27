@@ -51,6 +51,7 @@
           </ul>
         </li>
         <li><a href="http://madknow.com.br/busco/blog">Blog</a></li>
+        <li><a href="http://madknow.com.br/busco/public/contato">Contato</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
